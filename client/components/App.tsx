@@ -1,3 +1,5 @@
+import Circle from "./Circle"
+
 interface Props {
   width: number
   height: number
@@ -12,9 +14,13 @@ function App({ width, height }: Props) {
   }
 
   return (
+    <>
     <svg width={width} height={height}>
-      <circle cx={circle.cx} cy={circle.cy} r={circle.r} />
+      
+    <Circle cx={circle.cx} cy={circle.cy} r={circle.r} />
     </svg>
+
+    </>
   )
 }
 
